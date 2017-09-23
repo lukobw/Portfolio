@@ -487,9 +487,11 @@ footer .fa {
 }
 
 @media only screen and (min-width: 768px) {
+  .skills {
+    transition: .4s ease-in-out;
+  }
   .skills img:hover {
     filter: grayscale(0);
-    transition: .4s ease-in-out;
   }
 }
  

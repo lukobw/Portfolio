@@ -271,6 +271,7 @@ h2 > span {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   border-bottom: 4px solid #c0392b;
+  line-height: 45px;
 }
 
 .skills {

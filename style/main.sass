@@ -195,7 +195,7 @@ h2 > span
     text-align: center
 
     .left
-      text-align: left
+      text-align: center
 
     p
       &:nth-child(2)
@@ -311,10 +311,11 @@ h2 > span
   .photo
     height: 300px
     padding: 5px
-    width: 450px
+    width: 480px
 
   .projects-gallery
     display: flex
+    flex-wrap: wrap
     justify-content: center
     margin-bottom: 50px
 
@@ -479,3 +480,9 @@ footer
       &:hover
         filter: grayscale(0)
         transition: .4s ease-in-out
+
+@media only screen and (min-width: 1920px)
+
+  .projects-gallery
+    margin: 0 auto
+    max-width: 1600px

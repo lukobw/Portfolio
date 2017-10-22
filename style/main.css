@@ -88,6 +88,11 @@ h2 > span {
   transition-property: opacity;
 }
 
+.carousel-fade #carouselControls,
+.carousel-inner #carouselControls {
+  text-align: center;
+}
+
 .carousel-fade .active,
 .carousel-inner .active {
   opacity: 1;
@@ -290,7 +295,7 @@ h2 > span {
 }
 
 .skills h2 span {
-  color: #fff;
+  color: #000;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   border-bottom: 4px solid #c0392b;
@@ -501,9 +506,12 @@ footer .fa {
 }
 
 @media only screen and (min-width: 768px) {
+  .skills img {
+    transition: .6s ease-in-out;
+  }
   .skills img:hover {
     filter: grayscale(0);
-    transition: .4s ease-in-out;
+    transform: scale(1.2);
   }
 }
 

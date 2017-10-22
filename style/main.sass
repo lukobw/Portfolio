@@ -126,6 +126,9 @@ h2 > span
     opacity: 0
     transition-property: opacity
 
+  #carouselControls
+    text-align: center
+
   .active
     opacity: 1
 
@@ -145,6 +148,8 @@ h2 > span
 
   li
     background-color: $indicators
+
+
 
 // ABOUT ME
 .about-me
@@ -292,7 +297,7 @@ h2 > span
     margin: 40px 0
 
     span
-      +h-common($white)
+      +h-common($black)
       +underline
 
   .skill
@@ -409,7 +414,6 @@ footer
     margin-left: 5px
 
 // MEDIA
-
 @media only screen and (max-width: 360px)
 
   .carousel,
@@ -488,10 +492,11 @@ footer
   .skills
 
     img
+      transition: .6s ease-in-out
 
       &:hover
         filter: grayscale(0)
-        transition: .4s ease-in-out
+        transform: scale(1.2)
 
 @media only screen and (min-width: 1920px)
 

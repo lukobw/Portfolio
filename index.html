@@ -127,6 +127,14 @@
                             </div>
                         </div>
                     </div>
+                    <div id="carouselControls">
+                        <button id="playButton" type="button" class="btn btn-default btn-xs">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </button>
+                        <button id="pauseButton" type="button" class="btn btn-default btn-xs">
+                            <span class="glyphicon glyphicon-pause"></span>
+                        </button>
+                    </div>
                 </div>
                 <a class="left carousel-control" href="#niceCarousel" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
@@ -168,6 +176,18 @@
                 </div>
                 <div class="col-12 col-xs-6 col-sm-6 col-md-3 skill">
                     <img src="img/skills/node.png" alt="node">
+                </div>
+                <div class="col-12 col-xs-6 col-sm-6 col-md-3 skill">
+                    <img src="img/skills/react.png" alt="react">
+                </div>
+                <div class="col-12 col-xs-6 col-sm-6 col-md-3 skill">
+                    <img src="img/skills/ajax.png" alt="ajax">
+                </div>
+                <div class="col-12 col-xs-6 col-sm-6 col-md-3 skill">
+                    <img src="img/skills/psd.png" alt="react">
+                </div>
+                <div class="col-12 col-xs-6 col-sm-6 col-md-3 skill">
+                    <img src="img/skills/rwd.png" alt="react">
                 </div>
             </div>
         </div>
@@ -255,10 +275,6 @@
         </div>
     </footer>
 <!-- END OF FOOTER -->
-    <script>
-        $(function(){
-            $('#niceCarousel').carousel({interval: 7000});
-        });
-    </script>
+    <script src="scripts/carousel.js"></script>
 </body>
 </html>

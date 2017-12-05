@@ -3,6 +3,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  overflow: hidden;
 }
 #portfolio *, #portfolio *:before, #portfolio *:after {
   -moz-box-sizing: border-box;
@@ -295,29 +296,34 @@
   text-align: center;
 }
 #portfolio .cv {
-  font-size: 20px;
   padding: 10px;
   text-align: center;
 }
 #portfolio .cv__eng {
+  font-size: 24px;
   margin-right: 10px;
 }
 #portfolio .cv__pl {
   margin-left: 10px;
+  font-size: 24px;
 }
 #portfolio .footer {
-  font-size: 14px;
-  padding: 10px;
+  font-size: 16px;
+  padding: 30px 10px;
   text-align: center;
 }
 #portfolio .footer .fa-linkedin-square {
   color: #0077b5;
+  font-size: 22px;
 }
 #portfolio .footer .fa-facebook-square {
   color: #3b5998;
+  font-size: 22px;
+  padding: 0 10px;
 }
 #portfolio .footer .fa-github-square {
   color: #333;
+  font-size: 22px;
 }
 @media (max-width: 1140px) {
   #portfolio {
@@ -373,7 +379,6 @@
 }
 @media (max-width: 425px) {
   #portfolio {
-    max-width: 320px;
     width: 100%;
   }
   #portfolio .header__photo img {
@@ -384,5 +389,8 @@
   }
   #portfolio .footer {
     padding: 0;
+  }
+  #portfolio table {
+    margin-left: 25px;
   }
 }

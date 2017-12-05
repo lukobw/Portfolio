@@ -6,6 +6,7 @@
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
+	overflow: hidden;
 	*, *:before, *:after {
 		@include box-sizing(border-box);
 	}
@@ -272,28 +273,34 @@
 		}
 	}
 	.cv {
-		font-size: 20px;
 		padding: 10px;
 		text-align: center;
 		&__eng {	
+			font-size: 24px;
 			margin-right: 10px;
 		}
 		&__pl {
 			margin-left: 10px;
+			font-size: 24px;
 		}
 	}
 	.footer {
-		font-size: 14px;
-		padding: 10px;
+		font-size: 16px;
+		padding: 30px 10px;
 		text-align: center;
 		.fa-linkedin-square{
 			color: #0077b5;
+			font-size: 22px;
+			
 		}
 		.fa-facebook-square {
 			color: #3b5998;
+			font-size: 22px;
+			padding: 0 10px;
 		}
 		.fa-github-square {
 			color: #333;
+			font-size: 22px;
 		}
 	}
 //MEDIA
@@ -352,7 +359,6 @@
 		}
 	}
 	@media (max-width: 425px) {
-		max-width: 320px;
 		width: 100%;
 		.header {
 			&__photo {
@@ -366,6 +372,9 @@
 		}
 		.footer {
 			padding: 0;
+		}
+		table {
+			margin-left: 25px;
 		}
 	}
 }

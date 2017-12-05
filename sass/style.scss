@@ -13,12 +13,6 @@
 	img:not([alt]) {
   		border: 5px solid #c00;
 	}
-	[class*='slide-']{
-  		background-color: inherit;
-  		height: 100%;
-  		min-height: 600px;
-		width: 100%;
-	}
 	.lp-rem {
 		font-size: 16px;
 	}
@@ -89,7 +83,6 @@
 		text-align: center;
 		margin-bottom: 0;
   		&__main {
-			
 			&_heading {
 				color: #fff;
 				font-size: 3em;
@@ -97,59 +90,53 @@
 				margin: 0;
 				padding: 100px 0;
 				text-align: center;
-
 			}
 			&_span {
 				color: #ebebeb;
 				display: block;
 				font-size: 1.5em;
 				padding-bottom: 150px;
-
 			}
 		 }
-		 &__photo {
+		&__photo {
 			bottom: -150px;
 			display: inline-block;
 			text-align: center;
 			position: relative;
-				img {
-					border: 2px solid #F3F3F3;
-					border-radius: 10%;
-					object-fit: cover;
-					max-height: 300px;
-					max-width: 300px;
-					width: 100%;
-				}
+			img {
+				border: 2px solid #F3F3F3;
+				border-radius: 10%;
+				object-fit: cover;
+				max-height: 300px;
+				max-width: 300px;
+				width: 100%;
 			}
+		}
 	}
 	.about {
 		padding: 10px;
 		position: relative;
-
 		&__education {
 			padding: 0 15px;
 			text-align: center;
 			vertical-align: top;
-
 			&_bachelor {
 				padding: 15px 0;
-
 				.bachelor_heading {
 					font-size: 1.500em;
 				}
 			}
 			&_master {
 				padding: 15px 0;
-
 				.master_heading {
 					font-size: 1.500em;
-
 				}
 			}
 			&_kodilla {
 				padding: 15px 0;
 				.kodilla_heading {
 					font-size: 1.5em;
+					margin-top: 35px;
 				}
 				.kodilla_cert {
 					color: #02AC46;
@@ -157,7 +144,6 @@
 				}
 			} 
 		}
-		
 		&__experience {
 			vertical-align: top;
 			padding: 0 15px;
@@ -165,7 +151,6 @@
 				border-bottom: 1px solid #000;
 				margin-bottom: 25px;
 				padding: 15px 0;
-
 				.neo24_heading {
 					text-align: center;
 				}
@@ -174,28 +159,23 @@
 				border-bottom: 1px solid #000;
 				margin-bottom: 25px;
 				padding-bottom: 5px;
-
 				.lg_heading {
 					text-align: center;
 					margin: 0;
-
 					img {
 						height: 70px;
 						margin: 0 auto;
 						width: 70px;
 					}
-
 				}
 			}
 			&_avt {
 				border-bottom: 1px solid #000;
 				margin-bottom: 25px;
 				padding-bottom: 5px;
-
 				.avt_heading {
 					margin-bottom: 20px;
 					text-align: center;
-
 					&_link {
 						.logo {
 							font-weight: 700;
@@ -209,8 +189,6 @@
 									width: 10px;
 									height: 10px;
 									vertical-align: middle;
-									
-									
 								}
 
 							}
@@ -236,7 +214,6 @@
 	}
 	.skills {
 		padding: 10px;
-
 		&__heading {
 			font-size: 1.9em;
 			font-weight: 700;
@@ -260,7 +237,6 @@
 	.projects {
 		padding: 10px;
 		&__gallery {
-			
 			.photo {
 				text-align: center;
 				img {
@@ -290,10 +266,6 @@
 	.contact {
 		padding: 10px;
 		text-align: center;
-
-		&__heading {
-
-		}
 		&__data {
 			font-size: 1em;
 			text-align: center;
@@ -303,9 +275,7 @@
 		font-size: 20px;
 		padding: 10px;
 		text-align: center;
-
-		&__eng {
-				
+		&__eng {	
 			margin-right: 10px;
 		}
 		&__pl {
@@ -326,8 +296,7 @@
 			color: #333;
 		}
 	}
-
-	//MEDIA
+//MEDIA
 	@media (max-width: 1140px) {
 		// max-width: 940px;
 		width: 100%;
@@ -336,7 +305,6 @@
 		}
 	}
 	@media (max-width: 980px) {
-		// max-width: 700px;
 		width: 100%;
 		.ta_l {
 			text-align: right;
@@ -363,9 +331,7 @@
 
 	}
 	@media (max-width: 767px) {
-		// max-width: 540px;
 		width: 100%;
-
 		.lp-rem {
 			font-size: 12px;
 		}
@@ -384,16 +350,12 @@
 		.ta_l {
 			text-align: center;
 		}
-		
-		
 	}
 	@media (max-width: 425px) {
 		max-width: 320px;
 		width: 100%;
 		.header {
-
 			&__photo {
-
 				img {
 					border-radius: 50%;
 				}
@@ -405,7 +367,5 @@
 		.footer {
 			padding: 0;
 		}
-
 	}
-
 }

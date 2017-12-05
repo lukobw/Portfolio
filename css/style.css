@@ -13,12 +13,6 @@
 #portfolio img:not([alt]) {
   border: 5px solid #c00;
 }
-#portfolio [class*='slide-'] {
-  background-color: inherit;
-  height: 100%;
-  min-height: 600px;
-  width: 100%;
-}
 #portfolio .lp-rem {
   font-size: 16px;
 }
@@ -172,6 +166,7 @@
 }
 #portfolio .about__education_kodilla .kodilla_heading {
   font-size: 1.5em;
+  margin-top: 35px;
 }
 #portfolio .about__education_kodilla .kodilla_cert {
   color: #02AC46;

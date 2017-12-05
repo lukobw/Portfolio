@@ -1,6 +1,10 @@
 @import "compass";
 @import "compass/css3";
 
+body {
+	margin: 0 auto;
+}
+
 #portfolio {
 	background-color: #F3F3F3;
 	font-family: 'Roboto', sans-serif;

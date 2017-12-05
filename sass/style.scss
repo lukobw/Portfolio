@@ -1,0 +1,411 @@
+@import "compass";
+@import "compass/css3";
+
+#portfolio {
+	background-color: #F3F3F3;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	*, *:before, *:after {
+		@include box-sizing(border-box);
+	}
+	img[alt=""],
+	img:not([alt]) {
+  		border: 5px solid #c00;
+	}
+	[class*='slide-']{
+  		background-color: inherit;
+  		height: 100%;
+  		min-height: 600px;
+		width: 100%;
+	}
+	.lp-rem {
+		font-size: 16px;
+	}
+	.tt_u {
+		text-transform: uppercase;
+	}
+	.lp-color {
+		color: #E30613;
+	}
+	@for $i from 1 through 12 {
+		.w-#{$i} {
+			width: 100% / 12 *$i;
+		}
+	}
+	[class*='w-'] {
+		display: inline-block;
+		margin-right: -4px;
+	}
+	td {
+		padding-left: 30px;
+		text-align: left;
+	}
+	th {
+		font-size: 1.2em;
+	}
+	ul {
+		padding: 0;
+	}
+	li {
+		font-size: 1em;
+		line-height: 1.2;
+		font-weight: 400;
+	}
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+	hr {
+		background-color: #fff;
+		height: 4px;
+		width: 100px;
+	}
+	h3 {
+		margin-top: 25px;
+	}
+	.ta_l {
+		margin: 20px auto;
+		text-align: left;
+		width: 50%;
+	}
+	.heading {
+		color: #000;
+		font-size: 1.9em;
+		font-weight: 700;
+		text-align: center;
+	}
+	.w-20 {
+		width: 20%;
+	}
+
+	//HEADER
+	.header {	
+		background-image: url('../images/logo.jpg');
+		background-attachment: fixed;
+		background-position:  center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		margin-bottom: 0;
+  		&__main {
+			
+			&_heading {
+				color: #fff;
+				font-size: 3em;
+				font-weight: 700;
+				margin: 0;
+				padding: 100px 0;
+				text-align: center;
+
+			}
+			&_span {
+				color: #ebebeb;
+				display: block;
+				font-size: 1.5em;
+				padding-bottom: 150px;
+
+			}
+		 }
+		 &__photo {
+			bottom: -150px;
+			display: inline-block;
+			text-align: center;
+			position: relative;
+				img {
+					border: 2px solid #F3F3F3;
+					border-radius: 10%;
+					object-fit: cover;
+					max-height: 300px;
+					max-width: 300px;
+					width: 100%;
+				}
+			}
+	}
+	.about {
+		padding: 10px;
+		position: relative;
+
+		&__education {
+			padding: 0 15px;
+			text-align: center;
+			vertical-align: top;
+
+			&_bachelor {
+				padding: 15px 0;
+
+				.bachelor_heading {
+					font-size: 1.500em;
+				}
+			}
+			&_master {
+				padding: 15px 0;
+
+				.master_heading {
+					font-size: 1.500em;
+
+				}
+			}
+			&_kodilla {
+				padding: 15px 0;
+				.kodilla_heading {
+					font-size: 1.5em;
+				}
+				.kodilla_cert {
+					color: #02AC46;
+					display: inline-block;
+				}
+			} 
+		}
+		
+		&__experience {
+			vertical-align: top;
+			padding: 0 15px;
+			&_neo24 {
+				border-bottom: 1px solid #000;
+				margin-bottom: 25px;
+				padding: 15px 0;
+
+				.neo24_heading {
+					text-align: center;
+				}
+			}
+			&_lg {
+				border-bottom: 1px solid #000;
+				margin-bottom: 25px;
+				padding-bottom: 5px;
+
+				.lg_heading {
+					text-align: center;
+					margin: 0;
+
+					img {
+						height: 70px;
+						margin: 0 auto;
+						width: 70px;
+					}
+
+				}
+			}
+			&_avt {
+				border-bottom: 1px solid #000;
+				margin-bottom: 25px;
+				padding-bottom: 5px;
+
+				.avt_heading {
+					margin-bottom: 20px;
+					text-align: center;
+
+					&_link {
+						.logo {
+							font-weight: 700;
+							.color_audio {
+								color: #7E7E7E;
+								&:after {
+									background-color: #A6CE39;
+									border-radius: 50%;
+									display: inline-block;
+									content: '';
+									width: 10px;
+									height: 10px;
+									vertical-align: middle;
+									
+									
+								}
+
+							}
+						}
+					}
+				}
+			}
+			&_farutex {
+				border-bottom: 1px solid #000;
+				margin-bottom: 25px;
+				padding-bottom: 5px;
+				.farutex_heading {
+					margin-bottom: 20px;
+					text-align: center;
+					&_link {
+						.color_farutex {
+							color: #0D124A;
+						}
+					}
+				}
+			}
+		}
+	}
+	.skills {
+		padding: 10px;
+
+		&__heading {
+			font-size: 1.9em;
+			font-weight: 700;
+			padding: 15px 0;
+			text-align: center;
+		}
+		&__skill {
+			text-align: center;
+			margin: 20px -4px 20px 0;
+			img {
+				height: 130px;
+				margin: 0 auto;
+				width: 130px;
+				@include transition(all .4s ease);
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+	.projects {
+		padding: 10px;
+		&__gallery {
+			
+			.photo {
+				text-align: center;
+				img {
+					height: 173px;
+					margin: 10px;
+					max-width: 300px;
+					width: 100%;
+					transition: all .4s;
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
+				&__caption {
+					display: block;
+					font-size: 1em;
+					font-weight: 600;
+					margin: 5px auto;
+					text-align: center;
+					width: 250px;
+					&:hover {
+						color: #83CD29;
+					}
+				}
+			}
+		}
+	}
+	.contact {
+		padding: 10px;
+		text-align: center;
+
+		&__heading {
+
+		}
+		&__data {
+			font-size: 1em;
+			text-align: center;
+		}
+	}
+	.cv {
+		font-size: 20px;
+		padding: 10px;
+		text-align: center;
+
+		&__eng {
+				
+			margin-right: 10px;
+		}
+		&__pl {
+			margin-left: 10px;
+		}
+	}
+	.footer {
+		font-size: 14px;
+		padding: 10px;
+		text-align: center;
+		.fa-linkedin-square{
+			color: #0077b5;
+		}
+		.fa-facebook-square {
+			color: #3b5998;
+		}
+		.fa-github-square {
+			color: #333;
+		}
+	}
+
+	//MEDIA
+	@media (max-width: 1140px) {
+		// max-width: 940px;
+		width: 100%;
+		.lp-rem {
+			font-size: 15px;
+		}
+	}
+	@media (max-width: 980px) {
+		// max-width: 700px;
+		width: 100%;
+		.ta_l {
+			text-align: right;
+		}
+
+		.lp-rem {
+			font-size: 14px;
+		}
+		.w-3 {
+			width: 33.3%;
+		}
+		.header {
+			
+			&__photo {
+				bottom: 0;
+				position: relative;
+
+			}
+		}
+		.w-4 {
+			width: 50%;
+		}
+
+
+	}
+	@media (max-width: 767px) {
+		// max-width: 540px;
+		width: 100%;
+
+		.lp-rem {
+			font-size: 12px;
+		}
+		.w-6 {
+			width: 100%;
+		}
+		.w-3 {
+			width: 100%;
+		}
+		.w-4 {
+			width: 100%;
+		}
+		.w-20 {
+			width: 40%;
+		}
+		.ta_l {
+			text-align: center;
+		}
+		
+		
+	}
+	@media (max-width: 425px) {
+		max-width: 320px;
+		width: 100%;
+		.header {
+
+			&__photo {
+
+				img {
+					border-radius: 50%;
+				}
+			}
+		}
+		.w-20 {
+			width: 100%;
+		}
+		.footer {
+			padding: 0;
+		}
+
+	}
+
+}

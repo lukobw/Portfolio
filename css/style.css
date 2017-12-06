@@ -73,6 +73,7 @@ body {
 }
 #portfolio th {
   font-size: 1.2em;
+  text-align: left;
 }
 #portfolio ul {
   padding: 0;
@@ -352,7 +353,7 @@ body {
     width: 33.3%;
   }
   #portfolio .header__photo {
-    bottom: 0;
+    bottom: -7px;
     position: relative;
   }
   #portfolio .w-4 {

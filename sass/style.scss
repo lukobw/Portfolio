@@ -60,6 +60,7 @@ body {
 		background-color: #fff;
 		border: none;
 		height: 4px;
+		margin-bottom: 25px;
 		width: 100px;
 	}
 	h3 {
@@ -91,7 +92,7 @@ body {
 		margin-bottom: 0;
 
   		&__main {
-			&_heading {
+			&_title {
 				color: #fff;
 				font-size: 3em;
 				font-weight: 700;
@@ -99,11 +100,11 @@ body {
 				padding: 100px 0;
 				text-align: center;
 			}
-			&_span {
+			&_subtitle {
 				color: #ebebeb;
 				display: block;
 				font-size: 1.5em;
-				padding-bottom: 150px;
+				padding-bottom: 100px;
 			}
 		 }
 		&__photo {
@@ -292,22 +293,24 @@ body {
 		}
 	}
 	.footer {
-		font-size: 16px;
+		.fa {
+			font-size: 1.375em;
+		}
+		font-size: 1em;
 		padding: 30px 10px;
 		text-align: center;
 		.fa-linkedin-square{
 			color: #0077b5;
-			font-size: 22px;
-			
 		}
 		.fa-facebook-square {
 			color: #3b5998;
-			font-size: 22px;
-			padding: 0 10px;
+			padding: 0 5px;
 		}
 		.fa-github-square {
 			color: #333;
-			font-size: 22px;
+		}
+		br {
+			display: none;
 		}
 	}
 //MEDIA
@@ -379,9 +382,15 @@ body {
 		}
 		.footer {
 			padding: 0;
+			br {
+				display: block;
+			}
 		}
 		table {
 			margin-left: 25px;
+		}
+		.ta_l {
+			width: 75%;
 		}
 	}
 }

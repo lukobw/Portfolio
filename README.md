@@ -1,3 +1,3 @@
 # portfolio
 
-https://lukobw.github.io/portfolio/
+lucas-obwarzanek.pl

@@ -6,7 +6,7 @@ body {
   background-color: #F3F3F3;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.4;
   overflow: hidden;
 }
 #portfolio *, #portfolio *:before, #portfolio *:after {
@@ -95,10 +95,11 @@ body {
   width: 100px;
 }
 #portfolio h3 {
-  margin-top: 25px;
+  margin: 10px 0;
 }
 #portfolio .ta_l {
-  margin: 20px auto;
+  margin-left: auto;
+  margin-right: 13%;
   text-align: left;
   width: 50%;
 }
@@ -174,7 +175,6 @@ body {
 }
 #portfolio .about__education_kodilla .kodilla_heading {
   font-size: 1.5em;
-  margin-top: 35px;
 }
 #portfolio .about__education_kodilla .kodilla_cert {
   color: #02AC46;
@@ -190,6 +190,7 @@ body {
   padding: 15px 0;
 }
 #portfolio .about__experience_neo24 .neo24_heading {
+  font-size: 1.5em;
   text-align: center;
 }
 #portfolio .about__experience_lg {
@@ -212,7 +213,7 @@ body {
   padding-bottom: 5px;
 }
 #portfolio .about__experience_avt .avt_heading {
-  margin-bottom: 20px;
+  font-size: 1.5em;
   text-align: center;
 }
 #portfolio .about__experience_avt .avt_heading_link .logo {
@@ -236,7 +237,7 @@ body {
   padding-bottom: 5px;
 }
 #portfolio .about__experience_farutex .farutex_heading {
-  margin-bottom: 20px;
+  font-size: 1.5em;
   text-align: center;
 }
 #portfolio .about__experience_farutex .farutex_heading_link .color_farutex {
@@ -244,12 +245,6 @@ body {
 }
 #portfolio .skills {
   padding: 10px;
-}
-#portfolio .skills__heading {
-  font-size: 1.9em;
-  font-weight: 700;
-  padding: 15px 0;
-  text-align: center;
 }
 #portfolio .skills__skill {
   text-align: center;
@@ -340,7 +335,7 @@ body {
     width: 100%;
   }
   #portfolio .lp-rem {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 @media (max-width: 980px) {
@@ -349,9 +344,10 @@ body {
   }
   #portfolio .ta_l {
     text-align: right;
+    width: 90%;
   }
   #portfolio .lp-rem {
-    font-size: 14px;
+    font-size: 16px;
   }
   #portfolio .w-3 {
     width: 33.3%;
@@ -369,7 +365,7 @@ body {
     width: 100%;
   }
   #portfolio .lp-rem {
-    font-size: 12px;
+    font-size: 14px;
   }
   #portfolio .w-6 {
     width: 100%;
@@ -384,6 +380,8 @@ body {
     width: 40%;
   }
   #portfolio .ta_l {
+    font-size: 16px;
+    margin: 0 auto;
     text-align: center;
   }
 }
@@ -394,8 +392,11 @@ body {
   #portfolio .header__photo img {
     border-radius: 50%;
   }
+  #portfolio .lp-rem {
+    font-size: 13px;
+  }
   #portfolio .w-20 {
-    width: 100%;
+    width: 85%;
   }
   #portfolio .footer {
     padding: 0;
@@ -403,10 +404,13 @@ body {
   #portfolio .footer br {
     display: block;
   }
-  #portfolio table {
-    margin-left: 25px;
+  #portfolio td {
+    padding-left: 15px;
   }
   #portfolio .ta_l {
-    width: 75%;
+    width: 100%;
+  }
+  #portfolio table {
+    margin-left: 0;
   }
 }

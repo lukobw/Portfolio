@@ -9,7 +9,7 @@ body {
 	background-color: #F3F3F3;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 1.4;
 	overflow: hidden;
 	*, *:before, *:after {
 		@include box-sizing(border-box);
@@ -64,10 +64,12 @@ body {
 		width: 100px;
 	}
 	h3 {
-		margin-top: 25px;
+		margin: 10px 0;
 	}
+
 	.ta_l {
-		margin: 20px auto;
+		margin-left: auto;
+		margin-right: 13%;
 		text-align: left;
 		width: 50%;
 	}
@@ -145,7 +147,7 @@ body {
 				padding: 15px 0;
 				.kodilla_heading {
 					font-size: 1.5em;
-					margin-top: 35px;
+					
 				}
 				.kodilla_cert {
 					color: #02AC46;
@@ -161,6 +163,7 @@ body {
 				margin-bottom: 25px;
 				padding: 15px 0;
 				.neo24_heading {
+					font-size: 1.5em;
 					text-align: center;
 				}
 			}
@@ -183,7 +186,8 @@ body {
 				margin-bottom: 25px;
 				padding-bottom: 5px;
 				.avt_heading {
-					margin-bottom: 20px;
+					font-size: 1.5em;
+
 					text-align: center;
 					&_link {
 						.logo {
@@ -210,7 +214,7 @@ body {
 				margin-bottom: 25px;
 				padding-bottom: 5px;
 				.farutex_heading {
-					margin-bottom: 20px;
+					font-size: 1.5em;
 					text-align: center;
 					&_link {
 						.color_farutex {
@@ -223,12 +227,6 @@ body {
 	}
 	.skills {
 		padding: 10px;
-		&__heading {
-			font-size: 1.9em;
-			font-weight: 700;
-			padding: 15px 0;
-			text-align: center;
-		}
 		&__skill {
 			text-align: center;
 			margin: 20px -4px 20px 0;
@@ -318,17 +316,18 @@ body {
 		// max-width: 940px;
 		width: 100%;
 		.lp-rem {
-			font-size: 15px;
+			font-size: 16px;
 		}
 	}
 	@media (max-width: 980px) {
 		width: 100%;
 		.ta_l {
 			text-align: right;
+			width: 90%;
 		}
 
 		.lp-rem {
-			font-size: 14px;
+			font-size: 16px;
 		}
 		.w-3 {
 			width: 33.3%;
@@ -350,7 +349,7 @@ body {
 	@media (max-width: 767px) {
 		width: 100%;
 		.lp-rem {
-			font-size: 12px;
+			font-size: 14px;
 		}
 		.w-6 {
 			width: 100%;
@@ -365,6 +364,8 @@ body {
 			width: 40%;
 		}
 		.ta_l {
+			font-size: 16px;
+			margin: 0 auto;
 			text-align: center;
 		}
 	}
@@ -377,8 +378,11 @@ body {
 				}
 			}
 		}
+		.lp-rem {
+			font-size: 13px;
+		}
 		.w-20 {
-			width: 100%;
+			width: 85%;
 		}
 		.footer {
 			padding: 0;
@@ -386,11 +390,14 @@ body {
 				display: block;
 			}
 		}
-		table {
-			margin-left: 25px;
+		td {
+			padding-left: 15px;
 		}
 		.ta_l {
-			width: 75%;
+			width: 100%;
+		}
+		table {
+			margin-left: 0;
 		}
 	}
 }

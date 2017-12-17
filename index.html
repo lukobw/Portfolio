@@ -22,10 +22,10 @@
         </header>
 <!-- ABOUT -->
         <section class="about">        
-            <div class="about__experience lp-rem w-6">
+            <div class="about__experience w-6 lp-rem">
                 <h2 class="about__experience_heading heading tt_u">Experience</h2>
                 <hr>
-                <div class="about__experience_neo24 lp-rem">
+                <div class="about__experience_neo24 lp-rem after">
                     <h3 class="neo24_heading tt_u"><a href="https://www.neo24.pl/" target="_blank"><span class="lp-color">neo</span>24.pl</a></h3>             
                     <table>
                         <tr>
@@ -55,7 +55,7 @@
                     </table>
                 </div>
 <!-- EXPERIENCE -->
-                <div class="about__experience_lg k lp-rem">
+                <div class="about__experience_lg lp-rem after">
                     <h3 class="lg_heading">
                         <a href="http://www.lgchem.com/global/main" target="_blank"><img src="images/ico/lg.png"  alt="lg"></a>
                     </h3>
@@ -85,7 +85,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="about__experience_avt k lp-rem">
+                <div class="about__experience_avt lp-rem after">
                     <h3 class="avt_heading">
                         <a class="avt_heading_link" href="http://www.proaudio.pl/" target="_blank">
                             <span class="logo">pro<span class="color_audio">audio</span><span>avt</span></span>
@@ -115,7 +115,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="about__experience_farutex k lp-rem">
+                <div class="about__experience_farutex lp-rem after">
                     <h3 class="farutex_heading">
                         <a class="farutex_heading_link" href="http://www.farutex.pl" target="_blank">
                             <span class="color_farutex tt_u">farutex</span>
@@ -135,28 +135,24 @@
             </div>
 <!-- EDUCATION -->
             <div class="about__education w-6 lp-rem">
-                <h2 class="about__education_heading heading tt_u">Education</h2>
+                <h2 class="heading tt_u">Education</h2>
                 <hr>
-                <div class="about__education_kodilla ta_l lp-rem">
-                    <h3 class="kodilla_heading">Kodilla Coding School</h3>
-                    <span>June 2017 - November 2017</span><br>
-                    <span>Web Development</span><br>
-                    <span>Bootcamp Online</span><br>
-                    <a class="kodilla_cert" href="certyficates/web-dev-cert-pl.pdf" target="_blank">Certificate PL</a><br>
-                    <a class="kodilla_cert" href="certyficates/web-dev-cerf-en.pdf" target="_blank">Certificate ENG</a>
-                </div>
-                <div class="about__education_master ta_l lp-rem">
-                    <h3 class="master_heading">The University of Wroclaw</h3>
-                    <span>2009 - 2011</span><br>
-                    <span>Faculty of Law, Administration and Economy</span><br>
-                    <span>Postgraduate studies</span><br>
-                    <span>Field of study: administration</span><br>
-                    <span>Master of Arts</span>
-                </div>
-                <div class="about__education_bachelor ta_l lp-rem">
-                    <h3 class="bachelor_heading">University of Information Technology and Management<i> Copernicus </i>in Wroclaw</h3><br>
-                    <span>2006 - 2009</span><br>
-                    <span>Field of study: public administration</span><br>
+                <div class="about__container ta_l lp-rem">
+                    <h3 class="heading-small">Kodilla Coding School</h3>
+                    <span>June 2017 - November 2017</span>
+                    <span>Web Development</span>
+                    <span>Bootcamp Online</span>
+                    <a class="cert" href="certificates/web-dev-cert-pl.pdf" target="_blank">Certificate PL</a>
+                    <a class="cert" href="certificates/web-dev-cerf-en.pdf" target="_blank">Certificate ENG</a><br>
+                    <h3 class="heading-small">The University of Wroclaw</h3>
+                    <span>2009 - 2011</span>
+                    <span>Faculty of Law, Administration and Economy</span>
+                    <span>Postgraduate studies</span>
+                    <span>Field of study: administration</span>
+                    <span>Master of Arts</span><br>
+                    <h3 class="heading-small">University of Information Technology and Management<i> Copernicus </i>in Wroclaw</h3>
+                    <span>2006 - 2009</span>
+                    <span>Field of study: public administration</span>
                     <span>Bachelor of Arts</span>
                 </div>
             </div>
@@ -165,41 +161,43 @@
          <section class="skills lp-rem">
             <h3 class="skills__heading heading tt_u">Skills</h3>
             <hr>
-            <div class="skills__skill w-3">
-                <img src="images/skills/html.png" alt="html5">
-            </div>
-            <div class="skills__skill w-3">
-                <img src="images/skills/css.png" alt="css3">
-            </div>
-            <div class="skills__skill w-3">
-                <img src="images/skills/psd.png" alt="psd">
-            </div>
-            <div class="skills__skill w-3">
-                <img src="images/skills/rwd.png" alt="react">
-            </div>
-            <div class="skills__skill w-3">
-                <img src="images/skills/ps.png" alt="photoshop">
-            </div>
-            <div class="skills__skill w-3">
-                <img src="images/skills/javascript.png" alt="js"> 
-            </div>
-            <div class="skills__skill w-3">
-                <img src="images/skills/sass.png" alt="sass">
-            </div>
-            <div class="skills__skill w-3">
-                <img src="images/skills/bootstrap.png" alt="bootstrap">
-             </div>
-            <div class="skills__skill w-3">
-                <img src="images/skills/jquery.png" alt="jquery">
-            </div>
-            <div class="skills__skill w-3">
-                <img src="images/skills/git.png" alt="git">
-             </div>
-            <div class="skills__skill w-3">
-                <img src="images/skills/node.png" alt="node">
-            </div>
-            <div class="skills__skill w-3">
-                <img src="images/skills/magento.png" alt="magento">
+            <div class="skills__container">
+                <div class="skills__skill w-3">
+                    <img src="images/skills/html.png" alt="html5">
+                </div>
+                <div class="skills__skill w-3">
+                    <img src="images/skills/css.png" alt="css3">
+                </div>
+                <div class="skills__skill w-3">
+                    <img src="images/skills/psd.png" alt="psd">
+                </div>
+                <div class="skills__skill w-3">
+                    <img src="images/skills/rwd.png" alt="react">
+                </div>
+                <div class="skills__skill w-3">
+                    <img src="images/skills/ps.png" alt="photoshop">
+                </div>
+                <div class="skills__skill w-3">
+                    <img src="images/skills/javascript.png" alt="js"> 
+                </div>
+                <div class="skills__skill w-3">
+                    <img src="images/skills/sass.png" alt="sass">
+                </div>
+                <div class="skills__skill w-3">
+                    <img src="images/skills/bootstrap.png" alt="bootstrap">
+                </div>
+                <div class="skills__skill w-3">
+                    <img src="images/skills/jquery.png" alt="jquery">
+                </div>
+                <div class="skills__skill w-3">
+                    <img src="images/skills/git.png" alt="git">
+                </div>
+                <div class="skills__skill w-3">
+                    <img src="images/skills/node.png" alt="node">
+                </div>
+                <div class="skills__skill w-3">
+                    <img src="images/skills/magento.png" alt="magento">
+                </div>
             </div>
         </section>
 <!-- PROJECTS-->

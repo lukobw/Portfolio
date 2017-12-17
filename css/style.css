@@ -63,10 +63,6 @@ body {
 #portfolio .w-12 {
   width: 100%;
 }
-#portfolio [class*='w-'] {
-  display: inline-block;
-  margin-right: -4px;
-}
 #portfolio td {
   padding-left: 30px;
   text-align: left;
@@ -94,9 +90,6 @@ body {
   margin-bottom: 25px;
   width: 100px;
 }
-#portfolio h3 {
-  margin: 10px 0;
-}
 #portfolio .ta_l {
   margin-left: auto;
   margin-right: 13%;
@@ -105,9 +98,15 @@ body {
 }
 #portfolio .heading {
   color: #000;
-  font-size: 1.9em;
+  font-size: 2em;
   font-weight: 700;
   text-align: center;
+}
+#portfolio .heading-small {
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 #portfolio .w-20 {
   width: 20%;
@@ -118,6 +117,9 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   margin-bottom: 0;
 }
@@ -150,42 +152,41 @@ body {
   width: 100%;
 }
 #portfolio .about {
+  display: flex;
+  flex-wrap: wrap;
   padding: 10px;
   position: relative;
 }
 #portfolio .about__education {
+  display: flex;
+  flex-direction: column;
   padding: 0 15px;
   text-align: center;
   vertical-align: top;
 }
-#portfolio .about__education_bachelor {
+#portfolio .about__container {
+  display: flex;
+  flex-direction: column;
   padding: 15px 0;
 }
-#portfolio .about__education_bachelor .bachelor_heading {
-  font-size: 1.500em;
-}
-#portfolio .about__education_master {
-  padding: 15px 0;
-}
-#portfolio .about__education_master .master_heading {
-  font-size: 1.500em;
-}
-#portfolio .about__education_kodilla {
-  padding: 15px 0;
-}
-#portfolio .about__education_kodilla .kodilla_heading {
-  font-size: 1.5em;
-}
-#portfolio .about__education_kodilla .kodilla_cert {
+#portfolio .about__container .cert {
   color: #02AC46;
-  display: inline-block;
 }
 #portfolio .about__experience {
+  display: flex;
+  flex-direction: column;
   vertical-align: top;
   padding: 0 15px;
 }
+#portfolio .about__experience .after:after {
+  background-color: #02AC46;
+  content: '';
+  display: block;
+  margin: 0 auto;
+  height: 1px;
+  width: 50%;
+}
 #portfolio .about__experience_neo24 {
-  border-bottom: 1px solid #000;
   margin-bottom: 25px;
   padding: 15px 0;
 }
@@ -194,7 +195,6 @@ body {
   text-align: center;
 }
 #portfolio .about__experience_lg {
-  border-bottom: 1px solid #000;
   margin-bottom: 25px;
   padding-bottom: 5px;
 }
@@ -208,7 +208,6 @@ body {
   width: 70px;
 }
 #portfolio .about__experience_avt {
-  border-bottom: 1px solid #000;
   margin-bottom: 25px;
   padding-bottom: 5px;
 }
@@ -232,7 +231,6 @@ body {
   vertical-align: middle;
 }
 #portfolio .about__experience_farutex {
-  border-bottom: 1px solid #000;
   margin-bottom: 25px;
   padding-bottom: 5px;
 }
@@ -243,7 +241,10 @@ body {
 #portfolio .about__experience_farutex .farutex_heading_link .color_farutex {
   color: #0D124A;
 }
-#portfolio .skills {
+#portfolio .skills__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 10px;
 }
 #portfolio .skills__skill {
@@ -264,6 +265,11 @@ body {
 }
 #portfolio .projects {
   padding: 10px;
+}
+#portfolio .projects__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 #portfolio .projects__gallery .photo {
   text-align: center;
@@ -290,6 +296,9 @@ body {
   color: #83CD29;
 }
 #portfolio .contact {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   text-align: center;
 }
@@ -409,6 +418,7 @@ body {
   }
   #portfolio .ta_l {
     width: 100%;
+    text-align: left;
   }
   #portfolio table {
     margin-left: 0;

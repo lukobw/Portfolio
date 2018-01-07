@@ -61,6 +61,9 @@
 		position: relative;
 		&__education {
 			padding: 0 15px;
+			li {
+				list-style-type: none;
+			}
 		}
 		&__container {
 			display: flex;
@@ -196,9 +199,6 @@
 		}
 		br {
 			display: none;
-		}
-		span {
-			vertical-align: middle;
 		}
 	}
 	@import "modules/media";

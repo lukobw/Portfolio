@@ -47,7 +47,6 @@ li {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.2;
-  list-style-type: none;
 }
 
 a {
@@ -270,6 +269,9 @@ h2 {
 #portfolio .about__education {
   padding: 0 15px;
 }
+#portfolio .about__education li {
+  list-style-type: none;
+}
 #portfolio .about__container {
   display: flex;
   flex-direction: column;
@@ -401,9 +403,6 @@ h2 {
 #portfolio .footer br {
   display: none;
 }
-#portfolio .footer span {
-  vertical-align: middle;
-}
 @media (max-width: 1140px) {
   #portfolio {
     width: 100%;
@@ -482,7 +481,7 @@ h2 {
     display: block;
   }
   #portfolio td {
-    padding-left: 5px;
+    padding-left: 15px;
   }
   #portfolio .ta_l {
     width: 100%;

@@ -1,7 +1,6 @@
 body {
 	margin: 0 auto;
 }
-
 img[alt=""],
 img:not([alt]) {
     border: 5px solid #c00;
@@ -36,11 +35,14 @@ th {
 }
 ul {
     padding: 0;
+    margin: 0;
 }
 li {
     font-size: 1em;
-    line-height: 1.2;
     font-weight: 400;
+    line-height: 1.2;
+    list-style-type: none;
+    
 }
 a {
     text-decoration: none;
@@ -112,7 +114,7 @@ h2 {
         background-color: #02AC46;
         content: '';
         display: block;
-        margin: 0 auto;
+        margin: 5px 15px;
         height: 1px;
         width: 35%;
     }

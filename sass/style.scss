@@ -6,7 +6,7 @@
 	background-color: #F3F3F3;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	line-height: 1.4;
+	line-height: 1.2;
 	overflow: hidden;
 	*, *:before, *:after {
 		@include box-sizing(border-box);
@@ -105,18 +105,20 @@
 	}
 	.skills {
 		&__container {
+			align-items: center;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-around;
 			padding: 10px;
+			
 		}
 		&__skill {
 			text-align: center;
-			margin: 20px -4px 20px 0;
+			margin: 20px 0;
 			img {
-				height: 130px;
+				height: 128px;
 				margin: 0 auto;
-				width: 130px;
+				width: 128px;
 				@include transition(all .4s ease);
 				&:hover {
 					transform: scale(0.95);
@@ -166,18 +168,21 @@
 	.cv {
 		padding: 10px;
 		text-align: center;
-		&__eng, &__pl {	
+		&__en, &__pl {	
 			font-size: 24px;
 			margin: 0 10px;
 		}
 	}
 	.footer {
 		font-size: 1em;
-		margin-bottom: 20px;
+		line-height: 1.5;
+		margin-bottom: 10px;
 		padding: 30px 10px 0;
 		text-align: center;
+		
 		.fa {
-			font-size: 1.375em;
+			font-size: 1.5em;
+			vertical-align: middle;
 		}
 		.fa-linkedin-square{
 			color: #0077b5;

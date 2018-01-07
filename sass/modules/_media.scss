@@ -31,7 +31,10 @@
     .rem {
         font-size: 12px;
     }
-    .w-6, .w-3, .w-4 {
+    .w-3 {
+        width: 50%;
+    }
+    .w-6, .w-4 {
         width: 100%;
     }
     .w-20 {
@@ -54,9 +57,15 @@
                 border-radius: 50%;
             }
         }
+        &__title {
+            padding: 50px 0;
+        }
     }
     .w-20 {
         width: 85%;
+    }
+    .w-3 {
+        width: 100%;
     }
     .footer {
         padding: 0;
@@ -65,7 +74,7 @@
         }
     }
     td {
-        padding-left: 15px;
+        padding-left: 5px;
     }
     .ta_l {
         width: 100%;
@@ -73,5 +82,10 @@
     }
     table {
         margin-left: 0;
+    }
+    .after {
+        &:after {
+            margin: 5px 5px;
+        }
     }
 }

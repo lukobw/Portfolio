@@ -40,12 +40,14 @@ th {
 
 ul {
   padding: 0;
+  margin: 0;
 }
 
 li {
   font-size: 1em;
-  line-height: 1.2;
   font-weight: 400;
+  line-height: 1.2;
+  list-style-type: none;
 }
 
 a {
@@ -200,7 +202,7 @@ h2 {
   background-color: #02AC46;
   content: '';
   display: block;
-  margin: 0 auto;
+  margin: 5px 15px;
   height: 1px;
   width: 35%;
 }
@@ -209,7 +211,7 @@ h2 {
   background-color: #F3F3F3;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.2;
   overflow: hidden;
 }
 #portfolio *, #portfolio *:before, #portfolio *:after {
@@ -303,6 +305,7 @@ h2 {
   padding: 15px 0;
 }
 #portfolio .skills__container {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -310,12 +313,12 @@ h2 {
 }
 #portfolio .skills__skill {
   text-align: center;
-  margin: 20px -4px 20px 0;
+  margin: 20px 0;
 }
 #portfolio .skills__skill img {
-  height: 130px;
+  height: 128px;
   margin: 0 auto;
-  width: 130px;
+  width: 128px;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
@@ -370,18 +373,20 @@ h2 {
   padding: 10px;
   text-align: center;
 }
-#portfolio .cv__eng, #portfolio .cv__pl {
+#portfolio .cv__en, #portfolio .cv__pl {
   font-size: 24px;
   margin: 0 10px;
 }
 #portfolio .footer {
   font-size: 1em;
-  margin-bottom: 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
   padding: 30px 10px 0;
   text-align: center;
 }
 #portfolio .footer .fa {
-  font-size: 1.375em;
+  font-size: 1.5em;
+  vertical-align: middle;
 }
 #portfolio .footer .fa-linkedin-square {
   color: #0077b5;
@@ -433,7 +438,10 @@ h2 {
   #portfolio .rem {
     font-size: 12px;
   }
-  #portfolio .w-6, #portfolio .w-3, #portfolio .w-4 {
+  #portfolio .w-3 {
+    width: 50%;
+  }
+  #portfolio .w-6, #portfolio .w-4 {
     width: 100%;
   }
   #portfolio .w-20 {
@@ -455,8 +463,14 @@ h2 {
   #portfolio .header__photo img {
     border-radius: 50%;
   }
+  #portfolio .header__title {
+    padding: 50px 0;
+  }
   #portfolio .w-20 {
     width: 85%;
+  }
+  #portfolio .w-3 {
+    width: 100%;
   }
   #portfolio .footer {
     padding: 0;
@@ -465,7 +479,7 @@ h2 {
     display: block;
   }
   #portfolio td {
-    padding-left: 15px;
+    padding-left: 5px;
   }
   #portfolio .ta_l {
     width: 100%;
@@ -473,5 +487,8 @@ h2 {
   }
   #portfolio table {
     margin-left: 0;
+  }
+  #portfolio .after:after {
+    margin: 5px 5px;
   }
 }

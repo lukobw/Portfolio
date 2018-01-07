@@ -401,6 +401,9 @@ h2 {
 #portfolio .footer br {
   display: none;
 }
+#portfolio .footer span {
+  vertical-align: middle;
+}
 @media (max-width: 1140px) {
   #portfolio {
     width: 100%;

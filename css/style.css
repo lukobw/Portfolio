@@ -219,7 +219,7 @@ h2 {
   box-sizing: border-box;
 }
 #portfolio .header {
-  background: #080d11 url("../images/logo.jpg") center no-repeat;
+  background: #080d11 url("../assets/images/logo.jpg") center no-repeat;
   background-attachment: fixed;
   background-size: cover;
   display: flex;
@@ -291,10 +291,10 @@ h2 {
   margin: 0 auto;
   width: 70px;
 }
-#portfolio .about__avt_link {
+#portfolio .about__avt--link {
   font-weight: 700;
 }
-#portfolio .about__avt_link .color_audio:after {
+#portfolio .about__avt--link .color_audio:after {
   background-color: #A6CE39;
   border-radius: 50%;
   display: inline-block;

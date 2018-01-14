@@ -13,7 +13,7 @@
 	}
 	//HEADER
 	.header {	
-		background: #080d11 url('../images/logo.jpg')center no-repeat;
+		background: #080d11 url('../assets/images/logo.jpg')center no-repeat;
 		background-attachment: fixed;
 		background-size: cover;
 		display: flex;
@@ -87,7 +87,7 @@
 			}
 		}
 		&__avt {
-			&_link {
+			&--link {
 				font-weight: 700;
 				.color_audio {
 					&:after {

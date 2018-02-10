@@ -13,9 +13,9 @@
 	}
 	//HEADER
 	.header {	
-		background: #080d11 url('../assets/images/logo.jpg')center no-repeat;
-		background-attachment: fixed;
+		background: #080d11 url('../assets/images/logo.jpg')top center no-repeat;
 		background-size: cover;
+		background-attachment: fixed;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

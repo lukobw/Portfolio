@@ -67,7 +67,7 @@ figure {
 }
 
 h2 {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .mar_b-15 {
@@ -235,7 +235,7 @@ h2 {
   font-weight: 700;
   letter-spacing: 5px;
   margin: 0;
-  padding: 100px 0;
+  padding: 180px 0 50px;
   text-align: center;
 }
 #portfolio .header__subtitle {
@@ -387,7 +387,7 @@ h2 {
   text-align: center;
 }
 #portfolio .footer .fa {
-  font-size: 1.5em;
+  font-size: 2em;
   vertical-align: middle;
 }
 #portfolio .footer .fa-linkedin-square {

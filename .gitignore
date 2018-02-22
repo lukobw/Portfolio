@@ -4,3 +4,7 @@ package.json
 package-lock.json
 config.rb
 .sass-cache
+assets/sass
+assets/config.rb
+assets/css/style.css
+assets/js/main.js

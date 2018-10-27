@@ -1,3 +1,0 @@
-# portfolio
-
-lucas-obwarzanek.pl
